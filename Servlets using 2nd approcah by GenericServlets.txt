@@ -1,0 +1,33 @@
+2. Servlets Design By using GenericServlets 
+--------------------------------------------
+
+GenericServlets is provided by the Servlet API in the form of java.servelt.GenericServlet or Jakarta.servlet.GenericServlet.
+
+GenericServlet is an abstract class. it is an implementation abstract class to ServletInterface, it is provided with all the servlet interface methods except service() method.
+
+in GenericServlet abstract class, still service() methods is an abstract method that must be implemented by the developers as per their application requirement in the subclasses of GenericServlet abstract class.
+
+
+3) Servlet Design Through HttpServlets
+--------------------------------------
+In web Application development Generic Servlet is able to process all the protocol request just like normal request. it is not providing specific implementation for any protocol conventions, This nature of the generic Servlet is not providing good compatibility between protocol and server side mechanism, it will not provide effective implementation of the web applications.
+
+To overcome the above problem sun micro system has provided a specific implementation for HttpProtocol at server side applications in the form of separate predefined library in a separate package called Http inside servlet package.
+
+In servlet API http package is able to provide the following predefined library to support for Http conventions. 
+
+Http Methods
+-------------
+http 1.0
+--------
+1. GET     --MOST WIEDLY USED
+2. POST    --MOST WIEDLY USED
+3. HEAD
+
+http 1.1
+--------
+1. Options
+2. Trace
+3. PUT     --MOST WIEDLY USED
+4. DELETE  --MOST WIEDLY USED
+
